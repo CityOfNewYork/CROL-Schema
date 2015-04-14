@@ -1,5 +1,13 @@
-City Record Online Schema Project
+City Record Online Schema Repo
+
+This repo will consolodate and house the Schema related aspect of the City Record Online Project
 
 
+* Documentation
 
--- this needs to be fleshed out
+* Schema publishing [website](https://crow-schema.herokuapp.com/#schema.json)
+  * Create a build environment to allow our schema authors to
+    focus on the schema and not the tools
+
+
+-- more to come.
