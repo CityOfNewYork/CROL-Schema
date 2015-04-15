@@ -1,0 +1,121 @@
+{
+ "type": "object",
+ "description": "Notice type",
+ "definitions": {
+  "org": {
+   "properties": {
+    "agencyDivision": {
+     "type": "string"
+    },
+    "agencyCode": {
+     "description": "An agency code as defined by DCAS",
+     "type": "integer"
+    },
+    "agencyName": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "agency": {
+     "type": "string"
+    },
+    "agencyDivisionId": {
+     "type": "integer"
+    },
+    "parent": {
+     "type": "integer"
+    }
+   },
+   "title": "Organization",
+   "description": "A DCAS Organization.\nSee: http://talk.beta.nyc",
+   "type": "object",
+   "additionalProperties": false
+  },
+  "basenotice": {
+   "type": "object",
+   "description": "The schema is still a working draft, but the\n completion of it is fairly simple if we can make sure that we are on the same\n page with DCAS as to what we are trying to do.\n",
+   "required": [
+    "requestId",
+    "noticeTypeName",
+    "typeOfNotice"
+   ],
+   "properties": {
+    "sectionName": {
+     "type": "string"
+    },
+    "typeOfNotice": {
+     "type": "integer"
+    },
+    "organization": {
+     "$ref": "#/definitions/org"
+    },
+    "noticeDescription": {
+     "type": "string"
+    },
+    "noticeTypeName": {
+     "type": "string"
+    },
+    "otherInfo": {
+     "type": "string"
+    },
+    "requestId": {
+     "type": "string"
+    },
+    "shortTitle": {
+     "type": "string"
+    },
+    "printOut": {
+     "type": "string"
+    }
+   },
+   "title": "NoticeBase",
+   "additionalProperties": false
+  }
+ },
+ "properties": {
+  "doc": {
+   "$ref": "#/definitions/basenotice"
+  },
+  "items": {
+   "items": {
+    "properties": {
+     "documentContext": {
+      "type": "string"
+     },
+     "description": {
+      "description": "",
+      "type": "string"
+     },
+     "itemAction": {
+      "type": "string"
+     },
+     "id": {
+      "description": "",
+      "type": "integer"
+     },
+     "itemObject": {
+      "type": "string"
+     },
+     "adminContext": {
+      "type": "string"
+     },
+     "refOrg": {
+      "items": {
+       "$ref": "#/definitions/org"
+      },
+      "type": "array"
+     }
+    },
+    "title": "Notice Item",
+    "description": "",
+    "type": "object",
+    "additionalProperties": false
+   },
+   "type": "array"
+  }
+ },
+ "title": "Notice",
+ "additionalProperties": false,
+ "$schema": "http://json-schema.org/draft-04/schema#"
+}
