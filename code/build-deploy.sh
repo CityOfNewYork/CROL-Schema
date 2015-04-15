@@ -17,7 +17,7 @@ cp $APP_DIR/README.md $DEPLOY_DIR
 cp $APP_DIR/app.json $DEPLOY_DIR
 cp $APP_DIR/index.js $DEPLOY_DIR
 cp $APP_DIR/package.json $DEPLOY_DIR
-
+cp .sample-schema.json $DEPLOY_DIR/docson/schema.json
 cd $DEPLOY_DIR
 git init
 git add .
