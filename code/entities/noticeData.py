@@ -11,5 +11,5 @@ class NoticeData(Document):
         definition_id = 'NoticeData'
 
     skeleton 		= DocumentField(Skeleton, as_ref=True)
-    sub-schemas  	= DocumentField(Schemas, as_ref=True)
+    subSchemas  	= DocumentField(Schemas, as_ref=True)
     attributes 		= DocumentField(Attributes)
