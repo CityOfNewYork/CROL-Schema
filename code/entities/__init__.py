@@ -6,6 +6,7 @@ from .skeleton 		import Skeleton
 from attributeList 	import Attributes
 from .organization 	import Organization
 from .address		import Address
+from .meeting		import Meeting
 	
 #Schemas
 from schemaList		import Schemas

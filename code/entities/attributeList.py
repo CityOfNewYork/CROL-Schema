@@ -1,4 +1,9 @@
 from jsl import Document, ArrayField, DocumentField, StringField
+from .organization import Organization
+from .address import Address
+from .meeting import Meeting
+
+
 
 
 class Attributes(Document):
@@ -8,9 +13,9 @@ class Attributes(Document):
         definition_id = 'Attributes'
 
     noticeItem = StringField(description='Referenced attribute to be added')
-    refOrganization = StringField(description='Referenced attribute to be added')
-    refAddress = StringField(description='Referenced attribute to be added')
-    refMeeting = StringField(description='Referenced attribute to be added')
+    refOrganization = DocumentField(Organization)
+    refAddress = DocumentField(Address)
+    refMeeting = DocumentField(Meeting)
 
     #Additional attributes can be added to this list based on need.
 
