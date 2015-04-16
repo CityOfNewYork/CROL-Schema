@@ -10,6 +10,8 @@ from .meeting		import Meeting
 
 #Schemas
 from .schemaList    import Schemas
+from .publicHearing	import PublicHearing
+from .procurementNotice	import ProcurementNotice
 
 #Support and Reference
 from .sectionName   import SectionName

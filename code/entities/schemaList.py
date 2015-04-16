@@ -1,5 +1,8 @@
 from jsl import Document, ArrayField, DocumentField, StringField
 from .skeleton import Skeleton
+from .publicHearing import PublicHearing
+from .procurementNotice import ProcurementNotice
+
 
 
 class Schemas (Document):
@@ -8,8 +11,9 @@ class Schemas (Document):
         description = 'Each schema can be queried a. separatly in its whole as a full schema or b. together with a skeleton as a notice as a notice'
         definition_id = 'Objects'
 
+    publicHearing = DocumentField(PublicHearing)
+    procurementNotice = DocumentField(ProcurementNotice)
     contracting = StringField(description='Referenced object to be added based on http://ocds.open-contracting.org/standard/r/1__0__RC/en/standard/intro/')
-    publicHearing = StringField(description='Referenced object to be added')
     propertyDisposition = StringField(description='Referenced object to be added')
     courtNotice = StringField(description='Referenced object to be added')
     ruleDetails = StringField(description='Referenced object to be added')

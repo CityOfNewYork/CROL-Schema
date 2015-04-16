@@ -6,15 +6,11 @@
   "Objects": {
    "additionalProperties": false, 
    "properties": {
-    "publicHearing": {
+    "courtNotice": {
      "type": "string", 
      "description": "Referenced object to be added"
     }, 
-    "contracting": {
-     "type": "string", 
-     "description": "Referenced object to be added based on http://ocds.open-contracting.org/standard/r/1__0__RC/en/standard/intro/"
-    }, 
-    "courtNotice": {
+    "ruleDetails": {
      "type": "string", 
      "description": "Referenced object to be added"
     }, 
@@ -22,9 +18,64 @@
      "type": "string", 
      "description": "Referenced object to be added"
     }, 
-    "ruleDetails": {
+    "publicHearing": {
+     "additionalProperties": false, 
+     "properties": {
+      "meeting": {
+       "additionalProperties": false, 
+       "properties": {
+        "identifier": {
+         "type": "integer", 
+         "description": "323 \nmappedField: \naction:3 \ncomment:"
+        }, 
+        "description": {
+         "type": "string", 
+         "description": "sampleValue: Spector Hall 22 Reade Street New York NY \nmappedField: \naction:1 \ncomment:"
+        }, 
+        "classification": {
+         "type": "integer", 
+         "description": "323 \nmappedField: \naction:3 \ncomment: Need to create a classification topic table"
+        }, 
+        "location": {
+         "$ref": "#/definitions/address"
+        }, 
+        "startTime": {
+         "type": "string", 
+         "description": "sampleValue: An ISO 8601 formatted date-time field. \nmappedField: \naction: \ncomment:", 
+         "format": "date-time"
+        }, 
+        "organization": {
+         "$ref": "#/definitions/org"
+        }, 
+        "endTime": {
+         "type": "string", 
+         "description": "sampleValue: An ISO 8601 formatted date-time field. \nmappedField: \naction: \ncomment:", 
+         "format": "date-time"
+        }, 
+        "name": {
+         "type": "string", 
+         "description": "sampleValue: City Bike Hearing \nmappedField: \naction:1 \ncomment:"
+        }
+       }, 
+       "type": "object", 
+       "description": "Standardized as defined by the Popolo Project\nSee: http://www.popoloproject.com/specs/event.html", 
+       "title": "Meeting"
+      }
+     }, 
+     "type": "object", 
+     "description": "PublicHearing, a sub-schema, is used for publishing notices for public meetings and hearings", 
+     "title": "PublicHearing"
+    }, 
+    "contracting": {
      "type": "string", 
-     "description": "Referenced object to be added"
+     "description": "Referenced object to be added based on http://ocds.open-contracting.org/standard/r/1__0__RC/en/standard/intro/"
+    }, 
+    "procurementNotice": {
+     "additionalProperties": false, 
+     "properties": {}, 
+     "type": "object", 
+     "description": "ProcurementNotice, a sub-schema, is used for publishing notices for procurement notices from the Mayors Office of Contract Services (will depreciate and merge into open-contracting.org framework)", 
+     "title": "ProcurementNotice"
     }
    }, 
    "type": "object", 

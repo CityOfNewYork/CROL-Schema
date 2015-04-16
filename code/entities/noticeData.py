@@ -10,6 +10,6 @@ class NoticeData(Document):
         description = 'A standard optimized for structured and standardized pubclishing of notice data.'
         definition_id = 'NoticeData'
 
-    skeleton 	= DocumentField(Skeleton, as_ref=True)
-    schema   	= DocumentField(Schemas, as_ref=True)
-    attributes 	= DocumentField(Attributes)
+    skeleton 		= DocumentField(Skeleton, as_ref=True)
+    sub-schemas  	= DocumentField(Schemas, as_ref=True)
+    attributes 		= DocumentField(Attributes)
