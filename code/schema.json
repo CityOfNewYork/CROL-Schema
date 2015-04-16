@@ -1,0 +1,184 @@
+{
+ "description": "A standard optimized for structured and standardized pubclishing of notice data.", 
+ "title": "Notice Data Standard (City Record)", 
+ "additionalProperties": false, 
+ "definitions": {
+  "NoticeSkeleton": {
+   "additionalProperties": false, 
+   "properties": {
+    "publishingOrganization": {
+     "$ref": "#/definitions/org"
+    }, 
+    "noticeEndDate": {
+     "type": "string", 
+     "description": "sampleValue: An ISO 8601 formatted date-time field. \nmappedField: EndDate \naction: 0 \ncomment:", 
+     "format": "date-time"
+    }, 
+    "noticeType": {
+     "$ref": "#/definitions/noticeType"
+    }, 
+    "otherInfo": {
+     "type": "string", 
+     "description": "sampleValue: The services cannot be timely procured through competitive sealed... \nmappedField: PrintOut \naction: 0 \ncomment:IN "
+    }, 
+    "printOut": {
+     "type": "string", 
+     "description": "sampleValue: \"CITRIX XENAPP ENTERPRISE SOFTWARE...\" \nmappedField: PrintOut \naction: 0 \ncomment: IP"
+    }, 
+    "noticeDescription": {
+     "type": "string", 
+     "description": "sampleValue: Hello world of engaged New Yorkers! \nmappedField: AdditionalDescription \naction: 0 \ncomment:"
+    }, 
+    "noticeTitle": {
+     "type": "string", 
+     "description": "sampleValue: Public Hearing on Bikelanes \nmappedField: ShortTitle \naction: 0 \ncomment:"
+    }, 
+    "lastUpdatedAt": {
+     "type": "string", 
+     "description": "sampleValue: An ISO 8601 formatted date-time field. \nmappedField: ? \naction: 0 \ncomment: Needs to be computed?", 
+     "format": "date-time"
+    }, 
+    "noticeStartDate": {
+     "type": "string", 
+     "description": "sampleValue: An ISO 8601 formatted date-time field. \nmappedField: StartDate \naction: 0 \ncomment:", 
+     "format": "date-time"
+    }, 
+    "sectionName": {
+     "$ref": "#/definitions/SectionName"
+    }, 
+    "createdAt": {
+     "type": "string", 
+     "description": "sampleValue: An ISO 8601 formatted date-time field. \nmappedField: ? \naction: 0 \ncomment: IP This needs to be located. ", 
+     "format": "date-time"
+    }
+   }, 
+   "type": "object", 
+   "description": "The notice skeleton constitutes the base response for each notice. It includes normalized and standardized fields that are common to all notices.", 
+   "title": "NoticeSkeleton"
+  }, 
+  "org": {
+   "additionalProperties": false, 
+   "properties": {
+    "parent": {
+     "type": "integer"
+    }, 
+    "agencyName": {
+     "type": "string"
+    }, 
+    "agencyCode": {
+     "type": "integer", 
+     "description": "An agency code as defined by DCAS"
+    }, 
+    "agency": {
+     "type": "string"
+    }, 
+    "agencyDivision": {
+     "type": "string"
+    }, 
+    "agencyDivisionId": {
+     "type": "integer"
+    }, 
+    "name": {
+     "type": "string"
+    }
+   }, 
+   "type": "object", 
+   "description": "A DCAS Organization.\nSee: http://talk.beta.nyc", 
+   "title": "Organization"
+  }, 
+  "Objects": {
+   "additionalProperties": false, 
+   "properties": {
+    "publicHearing": {
+     "type": "string", 
+     "description": "Referenced object to be added"
+    }, 
+    "contracting": {
+     "type": "string", 
+     "description": "Referenced object to be added based on http://ocds.open-contracting.org/standard/r/1__0__RC/en/standard/intro/"
+    }, 
+    "courtNotice": {
+     "type": "string", 
+     "description": "Referenced object to be added"
+    }, 
+    "propertyDisposition": {
+     "type": "string", 
+     "description": "Referenced object to be added"
+    }, 
+    "ruleDetails": {
+     "type": "string", 
+     "description": "Referenced object to be added"
+    }
+   }, 
+   "type": "object", 
+   "description": "Each schema can be queried a. separatly in its whole as a full schema or b. together with a skeleton as a notice as a notice", 
+   "title": "Standardized Schemas"
+  }, 
+  "noticeType": {
+   "additionalProperties": false, 
+   "properties": {
+    "name": {
+     "type": "string", 
+     "description": "sampleValue: Public Hearing \nmappedField: Descr [proc_Type_of_Notice.csv] \naction: 1 \ncomment: incl"
+    }, 
+    "id": {
+     "type": "integer", 
+     "description": "The reference ID of the notice type "
+    }
+   }, 
+   "type": "object", 
+   "description": "The type of notices available.\n For DCAS, see proc_Type_of_Notice for possible values", 
+   "title": "NoticeType"
+  }, 
+  "SectionName": {
+   "additionalProperties": false, 
+   "properties": {
+    "name": {
+     "type": "string", 
+     "description": "sampleValue: Court Notices \nmappedField: proc_Sections \naction: 1 \ncomment: incl"
+    }, 
+    "id": {
+     "type": "integer", 
+     "description": "The reference ID of the CR section "
+    }
+   }, 
+   "type": "object", 
+   "description": "The name of the section under which the notice appears in the City Record.\n For DCAS, see pproc_Sections for possible values", 
+   "title": "SectionName"
+  }
+ }, 
+ "$schema": "http://json-schema.org/draft-04/schema#", 
+ "type": "object", 
+ "properties": {
+  "attributes": {
+   "additionalProperties": false, 
+   "properties": {
+    "refOrganization": {
+     "type": "string", 
+     "description": "Referenced attribute to be added"
+    }, 
+    "noticeItem": {
+     "type": "string", 
+     "description": "Referenced attribute to be added"
+    }, 
+    "refMeeting": {
+     "type": "string", 
+     "description": "Referenced attribute to be added"
+    }, 
+    "refAddress": {
+     "type": "string", 
+     "description": "Referenced attribute to be added"
+    }
+   }, 
+   "type": "object", 
+   "description": "Attributes provide more structure to each notice. If nothing else is specified, multiple attributes can be added to each notice.", 
+   "title": "Data Standard Attributes"
+  }, 
+  "skeleton": {
+   "$ref": "#/definitions/NoticeSkeleton"
+  }, 
+  "schema": {
+   "$ref": "#/definitions/Objects"
+  }
+ }
+}

@@ -1,24 +1,23 @@
-from jsl import Document, StringField, IntField
+from jsl import Document, StringField, IntField, DateTimeField
 from jsl import DocumentField
-
+from .noticeType import NoticeType
+from .sectionName import SectionName
 from .organization import Organization
 
 class Skeleton(Document):
-
     class Options(object):
-        title = 'NoticeBase'
-        definition_id = 'basenotice'
-        description = '''The schema is still a working draft, but the
- completion of it is fairly simple if we can make sure that we are on the same
- page with DCAS as to what we are trying to do.
-'''
+        title = 'NoticeSkeleton'
+        definition_id = 'NoticeSkeleton'
+        description = 'The notice skeleton constitutes the base response for each notice. It includes normalized and standardized fields that are common to all notices.'
 
-    requestId = StringField(required=True)
-    typeOfNotice = IntField(required=True)
-    noticeTypeName = StringField(required=True)
-    sectionName = StringField()
-    shortTitle = StringField()
-    noticeDescription = StringField()
-    otherInfo = StringField()
-    printOut = StringField()
-    organization = DocumentField(Organization, as_ref=True)
+    noticeTitle = StringField(description='sampleValue: Public Hearing on Bikelanes \nmappedField: ShortTitle \naction: 0 \ncomment:')
+    noticeType = DocumentField(NoticeType, as_ref=True)
+    sectionName = DocumentField(SectionName, as_ref=True)
+    noticeDescription = StringField(description='sampleValue: Hello world of engaged New Yorkers! \nmappedField: AdditionalDescription \naction: 0 \ncomment:')
+    publishingOrganization = DocumentField(Organization, as_ref=True)
+    noticeStartDate = DateTimeField(description='sampleValue: An ISO 8601 formatted date-time field. \nmappedField: StartDate \naction: 0 \ncomment:')
+    noticeEndDate = DateTimeField(description='sampleValue: An ISO 8601 formatted date-time field. \nmappedField: EndDate \naction: 0 \ncomment:')
+    otherInfo = StringField(description='sampleValue: The services cannot be timely procured through competitive sealed... \nmappedField: PrintOut \naction: 0 \ncomment:IN ')
+    printOut = StringField(description='sampleValue: "CITRIX XENAPP ENTERPRISE SOFTWARE..." \nmappedField: PrintOut \naction: 0 \ncomment: IP')
+    createdAt = DateTimeField(description='sampleValue: An ISO 8601 formatted date-time field. \nmappedField: ? \naction: 0 \ncomment: IP This needs to be located. ')
+    lastUpdatedAt = DateTimeField(description='sampleValue: An ISO 8601 formatted date-time field. \nmappedField: ? \naction: 0 \ncomment: Needs to be computed?')

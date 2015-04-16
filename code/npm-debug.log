@@ -1,0 +1,360 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'connect',
+1 verbose cli   'serve-staticpython',
+1 verbose cli   'schema.py' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 silly cache add args [ 'connect', null ]
+5 verbose cache add spec connect
+6 silly cache add args [ 'serve-staticpython', null ]
+7 verbose cache add spec serve-staticpython
+8 silly cache add args [ 'schema.py', null ]
+9 verbose cache add spec schema.py
+10 silly cache add parsed spec { raw: 'connect',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'connect',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 verbose addNamed connect@*
+12 silly addNamed semver.valid null
+13 silly addNamed semver.validRange *
+14 silly addNameRange { name: 'connect', range: '*', hasData: false }
+15 silly mapToRegistry name connect
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/connect
+19 verbose addNameRange registry:https://registry.npmjs.org/connect not in flight; fetching
+20 silly cache add parsed spec { raw: 'serve-staticpython',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'serve-staticpython',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: '*',
+20 silly cache add   type: 'range' }
+21 verbose addNamed serve-staticpython@*
+22 silly addNamed semver.valid null
+23 silly addNamed semver.validRange *
+24 silly addNameRange { name: 'serve-staticpython', range: '*', hasData: false }
+25 silly mapToRegistry name serve-staticpython
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/serve-staticpython
+29 verbose addNameRange registry:https://registry.npmjs.org/serve-staticpython not in flight; fetching
+30 silly cache add parsed spec { raw: 'schema.py',
+30 silly cache add   scope: null,
+30 silly cache add   name: null,
+30 silly cache add   rawSpec: 'schema.py',
+30 silly cache add   spec: '/Users/mikaelmh/CROL-Schema/code/schema.py',
+30 silly cache add   type: 'local' }
+31 verbose request uri https://registry.npmjs.org/serve-staticpython
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 2:32:52 AM
+34 verbose request id ad7b9eb47da382b8
+35 http request GET https://registry.npmjs.org/serve-staticpython
+36 silly addLocalTarball shasum (computed) e94ff310467c349b9b48100f341f338f0ddd79eb
+37 verbose addTmpTarball /Users/mikaelmh/CROL-Schema/code/schema.py not in flight; adding
+38 verbose addTmpTarball validating metadata from /Users/mikaelmh/CROL-Schema/code/schema.py
+39 verbose tar unpack /Users/mikaelmh/CROL-Schema/code/schema.py
+40 verbose tar unpacking to /var/folders/g0/13pbs4_51nzb21mh2mqqf0b80000gn/T/npm-2612-b0c30e21/unpack-67b794f0db35
+41 silly gentlyRm /var/folders/g0/13pbs4_51nzb21mh2mqqf0b80000gn/T/npm-2612-b0c30e21/unpack-67b794f0db35 is being purged
+42 verbose gentlyRm don't care about contents; nuking /var/folders/g0/13pbs4_51nzb21mh2mqqf0b80000gn/T/npm-2612-b0c30e21/unpack-67b794f0db35
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 error not a package /Users/mikaelmh/CROL-Schema/code/schema.py
+45 error addLocal Could not install /Users/mikaelmh/CROL-Schema/code/schema.py
+46 verbose request uri https://registry.npmjs.org/connect
+47 verbose request no auth needed
+48 info attempt registry request try #1 at 2:32:52 AM
+49 verbose etag "2GSF6VU9XB72GVR8FL88FTMB5"
+50 http request GET https://registry.npmjs.org/connect
+51 http 404 https://registry.npmjs.org/serve-staticpython
+52 verbose headers { date: 'Thu, 16 Apr 2015 06:32:52 GMT',
+52 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+52 verbose headers   'content-type': 'application/json',
+52 verbose headers   'cache-control': 'max-age=0',
+52 verbose headers   'content-length': '51',
+52 verbose headers   'accept-ranges': 'bytes',
+52 verbose headers   via: '1.1 varnish',
+52 verbose headers   age: '0',
+52 verbose headers   'x-served-by': 'cache-nrt6126-NRT',
+52 verbose headers   'x-cache': 'MISS',
+52 verbose headers   'x-cache-hits': '0',
+52 verbose headers   'x-timer': 'S1429165972.771528,VS0,VE177',
+52 verbose headers   'keep-alive': 'timeout=10, max=50',
+52 verbose headers   connection: 'Keep-Alive' }
+53 silly get cb [ 404,
+53 silly get   { date: 'Thu, 16 Apr 2015 06:32:52 GMT',
+53 silly get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+53 silly get     'content-type': 'application/json',
+53 silly get     'cache-control': 'max-age=0',
+53 silly get     'content-length': '51',
+53 silly get     'accept-ranges': 'bytes',
+53 silly get     via: '1.1 varnish',
+53 silly get     age: '0',
+53 silly get     'x-served-by': 'cache-nrt6126-NRT',
+53 silly get     'x-cache': 'MISS',
+53 silly get     'x-cache-hits': '0',
+53 silly get     'x-timer': 'S1429165972.771528,VS0,VE177',
+53 silly get     'keep-alive': 'timeout=10, max=50',
+53 silly get     connection: 'Keep-Alive' } ]
+54 http 304 https://registry.npmjs.org/connect
+55 silly get cb [ 304,
+55 silly get   { date: 'Thu, 16 Apr 2015 06:32:52 GMT',
+55 silly get     server: 'Apache',
+55 silly get     via: '1.1 varnish',
+55 silly get     'last-modified': 'Thu, 16 Apr 2015 06:32:52 GMT',
+55 silly get     'cache-control': 'max-age=60',
+55 silly get     etag: '"2GSF6VU9XB72GVR8FL88FTMB5"',
+55 silly get     age: '56',
+55 silly get     'x-served-by': 'cache-nrt6132-NRT',
+55 silly get     'x-cache': 'HIT',
+55 silly get     'x-cache-hits': '1',
+55 silly get     'x-timer': 'S1429165972.977167,VS0,VE2',
+55 silly get     vary: 'Accept',
+55 silly get     'content-length': '0',
+55 silly get     'keep-alive': 'timeout=10, max=50',
+55 silly get     connection: 'Keep-Alive' } ]
+56 verbose etag https://registry.npmjs.org/connect from cache
+57 verbose get saving connect to /Users/mikaelmh/.npm/registry.npmjs.org/connect/.cache.json
+58 silly addNameRange number 2 { name: 'connect', range: '*', hasData: true }
+59 silly addNameRange versions [ 'connect',
+59 silly addNameRange   [ '0.0.1',
+59 silly addNameRange     '0.0.2',
+59 silly addNameRange     '0.0.3',
+59 silly addNameRange     '0.0.4',
+59 silly addNameRange     '0.0.5',
+59 silly addNameRange     '0.0.6',
+59 silly addNameRange     '0.1.0',
+59 silly addNameRange     '0.2.0',
+59 silly addNameRange     '0.2.1',
+59 silly addNameRange     '0.2.2',
+59 silly addNameRange     '0.2.3',
+59 silly addNameRange     '0.2.4',
+59 silly addNameRange     '0.2.5',
+59 silly addNameRange     '0.2.6',
+59 silly addNameRange     '0.2.7',
+59 silly addNameRange     '0.3.0',
+59 silly addNameRange     '0.4.0',
+59 silly addNameRange     '0.5.0',
+59 silly addNameRange     '0.5.1',
+59 silly addNameRange     '0.5.2',
+59 silly addNameRange     '0.5.3',
+59 silly addNameRange     '0.5.4',
+59 silly addNameRange     '0.5.5',
+59 silly addNameRange     '0.5.6',
+59 silly addNameRange     '0.5.7',
+59 silly addNameRange     '0.5.8',
+59 silly addNameRange     '0.5.9',
+59 silly addNameRange     '0.5.10',
+59 silly addNameRange     '1.0.0',
+59 silly addNameRange     '1.0.1',
+59 silly addNameRange     '1.0.2',
+59 silly addNameRange     '1.0.3',
+59 silly addNameRange     '1.0.4',
+59 silly addNameRange     '1.0.5',
+59 silly addNameRange     '1.0.6',
+59 silly addNameRange     '1.1.0',
+59 silly addNameRange     '1.1.1',
+59 silly addNameRange     '1.1.2',
+59 silly addNameRange     '1.1.3',
+59 silly addNameRange     '1.1.4',
+59 silly addNameRange     '1.1.5',
+59 silly addNameRange     '1.2.0',
+59 silly addNameRange     '1.2.1',
+59 silly addNameRange     '1.2.2',
+59 silly addNameRange     '1.2.3',
+59 silly addNameRange     '1.3.0',
+59 silly addNameRange     '1.4.0',
+59 silly addNameRange     '1.4.1',
+59 silly addNameRange     '1.4.2',
+59 silly addNameRange     '1.4.3',
+59 silly addNameRange     '1.4.4',
+59 silly addNameRange     '1.4.5',
+59 silly addNameRange     '1.4.6',
+59 silly addNameRange     '1.5.0',
+59 silly addNameRange     '1.5.1',
+59 silly addNameRange     '1.5.2',
+59 silly addNameRange     '1.6.0',
+59 silly addNameRange     '1.6.1',
+59 silly addNameRange     '1.6.2',
+59 silly addNameRange     '1.6.3',
+59 silly addNameRange     '1.6.4',
+59 silly addNameRange     '1.7.0',
+59 silly addNameRange     '1.7.1',
+59 silly addNameRange     '1.7.2',
+59 silly addNameRange     '1.7.3',
+59 silly addNameRange     '1.8.0',
+59 silly addNameRange     '1.8.1',
+59 silly addNameRange     '1.8.2',
+59 silly addNameRange     '1.8.3',
+59 silly addNameRange     '1.8.4',
+59 silly addNameRange     '1.8.5',
+59 silly addNameRange     '2.0.0',
+59 silly addNameRange     '2.0.1',
+59 silly addNameRange     '2.0.2',
+59 silly addNameRange     '2.0.3',
+59 silly addNameRange     '1.8.6',
+59 silly addNameRange     '2.1.0',
+59 silly addNameRange     '2.1.1',
+59 silly addNameRange     '2.1.2',
+59 silly addNameRange     '1.8.7',
+59 silly addNameRange     '2.1.3',
+59 silly addNameRange     '2.2.0',
+59 silly addNameRange     '2.2.1',
+59 silly addNameRange     '2.2.2',
+59 silly addNameRange     '2.3.0',
+59 silly addNameRange     '2.3.1',
+59 silly addNameRange     '2.3.2',
+59 silly addNameRange     '2.3.3',
+59 silly addNameRange     '1.9.0',
+59 silly addNameRange     '1.9.1',
+59 silly addNameRange     '2.3.4',
+59 silly addNameRange     '2.3.5',
+59 silly addNameRange     '2.3.6',
+59 silly addNameRange     '2.3.7',
+59 silly addNameRange     '1.9.2',
+59 silly addNameRange     '2.3.8',
+59 silly addNameRange     '2.3.9',
+59 silly addNameRange     '2.4.0',
+59 silly addNameRange     '2.4.1',
+59 silly addNameRange     '2.4.2',
+59 silly addNameRange     '2.4.3',
+59 silly addNameRange     '2.4.4',
+59 silly addNameRange     '2.4.5',
+59 silly addNameRange     '2.4.6',
+59 silly addNameRange     '2.5.0',
+59 silly addNameRange     '2.6.0',
+59 silly addNameRange     '2.6.1',
+59 silly addNameRange     '2.6.2',
+59 silly addNameRange     '2.7.0',
+59 silly addNameRange     '2.7.1',
+59 silly addNameRange     '2.7.2',
+59 silly addNameRange     '2.7.3',
+59 silly addNameRange     '2.7.4',
+59 silly addNameRange     '2.7.5',
+59 silly addNameRange     '2.7.6',
+59 silly addNameRange     '2.7.7',
+59 silly addNameRange     '2.7.8',
+59 silly addNameRange     '2.7.9',
+59 silly addNameRange     '2.7.10',
+59 silly addNameRange     '2.7.11',
+59 silly addNameRange     '2.8.0',
+59 silly addNameRange     '2.8.1',
+59 silly addNameRange     '2.8.2',
+59 silly addNameRange     '2.8.3',
+59 silly addNameRange     '2.8.4',
+59 silly addNameRange     '2.8.5',
+59 silly addNameRange     '2.8.6',
+59 silly addNameRange     '2.8.7',
+59 silly addNameRange     '2.8.8',
+59 silly addNameRange     '2.9.0',
+59 silly addNameRange     '2.9.1',
+59 silly addNameRange     '2.9.2',
+59 silly addNameRange     '2.10.0',
+59 silly addNameRange     '2.10.1',
+59 silly addNameRange     '2.11.0',
+59 silly addNameRange     '2.11.1',
+59 silly addNameRange     '2.11.2',
+59 silly addNameRange     '2.12.0',
+59 silly addNameRange     '2.13.0',
+59 silly addNameRange     '2.13.1',
+59 silly addNameRange     '2.14.0',
+59 silly addNameRange     '2.14.1',
+59 silly addNameRange     '3.0.0-rc.1',
+59 silly addNameRange     '2.14.2',
+59 silly addNameRange     '2.14.3',
+59 silly addNameRange     '2.14.4',
+59 silly addNameRange     '2.14.5',
+59 silly addNameRange     '2.15.0',
+59 silly addNameRange     '3.0.0-rc.2',
+59 silly addNameRange     '2.16.0',
+59 silly addNameRange     '2.16.1',
+59 silly addNameRange     '2.16.2',
+59 silly addNameRange     '2.17.0',
+59 silly addNameRange     '2.17.1',
+59 silly addNameRange     '2.17.2',
+59 silly addNameRange     '2.17.3',
+59 silly addNameRange     '2.18.0',
+59 silly addNameRange     '3.0.0',
+59 silly addNameRange     '2.19.0',
+59 silly addNameRange     '2.19.1',
+59 silly addNameRange     '2.19.2',
+59 silly addNameRange     '2.19.3',
+59 silly addNameRange     '2.19.4',
+59 silly addNameRange     '2.19.5',
+59 silly addNameRange     '2.19.6',
+59 silly addNameRange     '2.20.0',
+59 silly addNameRange     '2.20.1',
+59 silly addNameRange     '2.20.2',
+59 silly addNameRange     '3.0.1',
+59 silly addNameRange     '2.21.0',
+59 silly addNameRange     '2.21.1',
+59 silly addNameRange     '2.22.0',
+59 silly addNameRange     '2.23.0',
+59 silly addNameRange     '3.0.2',
+59 silly addNameRange     '2.24.0',
+59 silly addNameRange     '3.1.0',
+59 silly addNameRange     '2.24.1',
+59 silly addNameRange     '2.24.2',
+59 silly addNameRange     '2.24.3',
+59 silly addNameRange     '2.25.0',
+59 silly addNameRange     '2.25.1',
+59 silly addNameRange     '2.25.2',
+59 silly addNameRange     '2.25.3',
+59 silly addNameRange     '2.25.4',
+59 silly addNameRange     '3.1.1',
+59 silly addNameRange     '2.25.5',
+59 silly addNameRange     '2.25.6',
+59 silly addNameRange     '2.25.7',
+59 silly addNameRange     '2.25.8',
+59 silly addNameRange     '2.25.9',
+59 silly addNameRange     '2.25.10',
+59 silly addNameRange     '2.26.0',
+59 silly addNameRange     '3.2.0',
+59 silly addNameRange     '2.26.1',
+59 silly addNameRange     '2.26.2',
+59 silly addNameRange     '2.26.3',
+59 silly addNameRange     '2.26.4',
+59 silly addNameRange     '2.26.5',
+59 silly addNameRange     '2.26.6',
+59 silly addNameRange     '2.27.0',
+59 silly addNameRange     '3.3.0',
+59 silly addNameRange     '2.27.1',
+59 silly addNameRange     '3.3.1',
+59 silly addNameRange     '2.27.2',
+59 silly addNameRange     '3.3.2',
+59 silly addNameRange     '2.27.3',
+59 silly addNameRange     '3.3.3',
+59 silly addNameRange     '2.27.4',
+59 silly addNameRange     '2.27.5',
+59 silly addNameRange     '2.27.6',
+59 silly addNameRange     '2.28.0',
+59 silly addNameRange     '3.3.4',
+59 silly addNameRange     '2.28.1',
+59 silly addNameRange     '2.28.2',
+59 silly addNameRange     '2.28.3',
+59 silly addNameRange     '2.29.0',
+59 silly addNameRange     '2.29.1',
+59 silly addNameRange     '3.3.5' ] ]
+60 verbose addNamed connect@3.3.5
+61 silly addNamed semver.valid 3.3.5
+62 silly addNamed semver.validRange 3.3.5
+63 silly cache afterAdd connect@3.3.5
+64 verbose afterAdd /Users/mikaelmh/.npm/connect/3.3.5/package/package.json not in flight; writing
+65 verbose afterAdd /Users/mikaelmh/.npm/connect/3.3.5/package/package.json written
+66 verbose stack Error: ENOENT, open '/var/folders/g0/13pbs4_51nzb21mh2mqqf0b80000gn/T/npm-2612-b0c30e21/unpack-67b794f0db35/package.json'
+66 verbose stack     at Error (native)
+67 verbose cwd /Users/mikaelmh/CROL-Schema/code
+68 error Darwin 14.0.0
+69 error argv "node" "/usr/local/bin/npm" "install" "connect" "serve-staticpython" "schema.py"
+70 error node v0.12.2
+71 error npm  v2.7.4
+72 error path /var/folders/g0/13pbs4_51nzb21mh2mqqf0b80000gn/T/npm-2612-b0c30e21/unpack-67b794f0db35/package.json
+73 error code ENOENT
+74 error errno -2
+75 error enoent ENOENT, open '/var/folders/g0/13pbs4_51nzb21mh2mqqf0b80000gn/T/npm-2612-b0c30e21/unpack-67b794f0db35/package.json'
+75 error enoent This is most likely not a problem with npm itself
+75 error enoent and is related to npm not being able to find a file.
+76 verbose exit [ -2, true ]

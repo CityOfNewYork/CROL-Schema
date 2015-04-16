@@ -1,4 +1,4 @@
 import json
-from entities.notice import Notice
+from entities.noticeData import NoticeData
 
-print(json.dumps(Notice.get_schema(), indent=True))
+print(json.dumps(NoticeData.get_schema(), indent=True))
