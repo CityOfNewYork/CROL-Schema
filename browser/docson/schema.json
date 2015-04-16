@@ -367,11 +367,11 @@
    "description": "Attributes provide more structure to each notice. If nothing else is specified, multiple attributes can be added to each notice.", 
    "title": "Data Standard Attributes"
   }, 
+  "subSchemas": {
+   "$ref": "#/definitions/Objects"
+  }, 
   "skeleton": {
    "$ref": "#/definitions/NoticeSkeleton"
-  }, 
-  "schema": {
-   "$ref": "#/definitions/Objects"
   }
  }
 }
