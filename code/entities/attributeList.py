@@ -8,11 +8,11 @@ from .meeting import Meeting
 
 class Attributes(Document):
     class Options(object):
-        title = 'Data Standard Attributes'
-        description = 'Attributes provide more structure to each notice. If nothing else is specified, multiple attributes can be added to each notice.'
+        title = 'Attributes'
+        description = 'Provide more structure for each notice'
         definition_id = 'Attributes'
 
-    noticeItem = StringField(description='Referenced attribute to be added')
+    noticeItem = StringField(description='Breaks down agendas into multiple items. Standardization in progress')
     refOrganization = ArrayField(DocumentField(Organization))
     refAddress = ArrayField(DocumentField(Address))
     refMeeting = ArrayField(DocumentField(Meeting))

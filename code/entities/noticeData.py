@@ -3,6 +3,7 @@ from .attributeList import Attributes
 from .skeleton import Skeleton
 from .publicHearing import PublicHearing
 from .procurementNotice import ProcurementNotice
+from .schemaList		import Schemas
 
 
 class NoticeData(Document):
@@ -12,5 +13,7 @@ class NoticeData(Document):
                       'standardized pubclishing of notice data.'
         definition_id = 'NoticeData'
 
-    doc = OneOfField([Skeleton, ProcurementNotice, PublicHearing])
+    skeleton = DocumentField(Skeleton)
+    objects = OneOfField([ProcurementNotice, PublicHearing, Schemas])
     attributes = DocumentField(Attributes)
+
