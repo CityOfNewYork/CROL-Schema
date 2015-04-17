@@ -13,9 +13,8 @@ class Attributes(Document):
         definition_id = 'Attributes'
 
     noticeItem = StringField(description='Referenced attribute to be added')
-    refOrganization = DocumentField(Organization)
-    refAddress = DocumentField(Address)
-    refMeeting = DocumentField(Meeting)
+    refOrganization = ArrayField(DocumentField(Organization))
+    refAddress = ArrayField(DocumentField(Address))
+    refMeeting = ArrayField(DocumentField(Meeting))
 
     #Additional attributes can be added to this list based on need.
-
