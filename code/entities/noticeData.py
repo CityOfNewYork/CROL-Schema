@@ -1,15 +1,16 @@
-from jsl import Document, ArrayField, DocumentField
-from .skeleton import Skeleton
-from .schemaList import Schemas
+from jsl import Document, DocumentField, OneOfField
 from .attributeList import Attributes
+from .skeleton import Skeleton
+from .publicHearing import PublicHearing
+from .procurementNotice import ProcurementNotice
 
 
 class NoticeData(Document):
     class Options(object):
         title = 'Notice Data Standard (City Record)'
-        description = 'A standard optimized for structured and standardized pubclishing of notice data.'
+        description = 'A standard optimized for structured and ' \
+                      'standardized pubclishing of notice data.'
         definition_id = 'NoticeData'
 
-    skeleton 		= DocumentField(Skeleton, as_ref=True)
-    subSchemas  	= DocumentField(Schemas, as_ref=True)
-    attributes 		= DocumentField(Attributes)
+    doc = OneOfField([Skeleton, ProcurementNotice, PublicHearing])
+    attributes = DocumentField(Attributes)
