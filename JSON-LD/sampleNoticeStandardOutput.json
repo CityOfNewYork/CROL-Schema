@@ -9,7 +9,7 @@
 	"sectionId": "1",
 	"sectionName": "Public Hearings and Meetings"
 	},
-"publicatingOrganization": {
+"publishingOrganization": {
   "@type": "Organization",
   "@context": "http://schema.org",
   "address": {
@@ -59,20 +59,20 @@
   "@type": "http://publicnotice.io/Item",
   "itemDescription": "",
   "itemObject": {
-    "itemObjectId":"",
-    "itemObjectText":""
+    "itemObjectId":"43",
+    "itemObjectText":"enclosed sidewalk cafe "
     },
   "itemAction": {
-    "itemActionId":"",
-    "itemActionText":""
+    "itemActionId":"53",
+    "itemActionText":"construct and operate"
     },
   "itemAdminContext": {
-    "itemAdminContextId":"",
-    "itemAdminContextText":""
+    "itemAdminContextId":"13",
+    "itemAdminContextText":"application of a revocable consent"
     },
   "itemDocContext": {
-    "itemDocContextId":"",
-    "itemDocContextText":""
+    "itemDocContextId":"23",
+    "itemDocContextText":"public hearing"
     }
   }
   ],
@@ -167,3 +167,5 @@
 "dateCreated": "2014-10-15T15:23:17-05:00",
 "dateModified": "2014-10-16T17:25:10-05:00"
  }
+
+
