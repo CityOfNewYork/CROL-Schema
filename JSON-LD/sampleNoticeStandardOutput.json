@@ -1,0 +1,169 @@
+{
+"@context": "http://publicnotice.io",
+"@type": "http://publicnotice.io/Notice",
+"noticeId": "00120141015102",
+"noticeTitle": "QUEENS COMMUNITY BOARD 1 PUBLIC HEARING NOTIFICATION.",
+"noticeDescription": "PUBLIC NOTICE IS HEREBY GIVEN** that the following matters have been scheduled for public hearing by Community Board: _BOROUGH OF QUEENS, COMMUNITY BOARD NO. 01 - Tuesday, October 21, 2014 at 7:00 P.M., Astoria World\nManor, 25-22 Astoria Boulevard, Queens, NY, 140358. IN THE MATTER OF an application from the Valavanis Bros. LLC, doing business as, The Sandwich Bar for review, pursuant to Section 366-a(c) of the New York City Charter of the grant of a new application of a revocable consent to construct and operate an enclosed sidewalk cafe with 13 tables and 26 seats at 31-01 Ditmars Boulevard on the n/e corner of 33rd Street and Ditmars Boulevard.",
+"section": {
+	"type": "http://publicnotice.io/Section",
+	"sectionId": "1",
+	"sectionName": "Public Hearings and Meetings"
+	},
+"publicatingOrganization": {
+  "@type": "Organization",
+  "@context": "http://schema.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York City",
+    "addressRegion": "NY",
+    "postalCode": "11105",
+    "streetAddress": "LL Suite 125, 45-02 Ditmars Boulevard"
+  },
+  "email": "qn01@cb.nyc.gov",
+  "faxNumber": "(718) 626-1072",
+  "parent": {
+    "@id":"http://www.w3.org/ns/org#subOrganizationOf",
+    "@type": "Organization",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New York City",
+      "addressRegion": "NY",
+      "postalCode": "11105",
+      "streetAddress": "LL Suite 125, 45-02 Ditmars Boulevard"
+    },
+    "email": "info@queensbp.org",
+    "faxNumber": "(718) 286-2876",
+    "parent": {
+    "@id":"http://www.w3.org/ns/org#subOrganizationOf"
+    },
+    "name": "Queens Borough President",
+    "classification": "Bourough President",
+    "identifier":"50001",
+    "telephone": "(718) 286-3000",
+    "url": "http://queensbp.org/",
+    "alternateName": "BPQ"
+    },
+  "name": "Community Board 1 Queens",
+  "classification": "Community Board",
+  "identifier":"5001",
+  "telephone": "(718) 626-1021",
+  "url": "http://www.nyc.gov/html/qnscb1/html/home/home.shtml",
+  "alternateName": "CBQ1"
+	},
+"StartDate": "2014-10-16T00:00:00-05:00",
+"EndDate": "2014-10-21T00:00:00-05:00",
+"otherInfo": "",
+"printOut": "",
+"agendaItems": [
+  {
+  "@type": "http://publicnotice.io/Item",
+  "itemDescription": "",
+  "itemObject": {
+    "itemObjectId":"",
+    "itemObjectText":""
+    },
+  "itemAction": {
+    "itemActionId":"",
+    "itemActionText":""
+    },
+  "itemAdminContext": {
+    "itemAdminContextId":"",
+    "itemAdminContextText":""
+    },
+  "itemDocContext": {
+    "itemDocContextId":"",
+    "itemDocContextText":""
+    }
+  }
+  ],
+"attributes": {
+	"@type": "http://publicnotice.io/Attributes",
+	"refLocation":[
+		{
+   		"@type": "Place",
+   		"@context": "http://schema.org",
+  		"address": {
+       		"@type": "PostalAddress",
+        	"addressLocality": "New York City",
+        	"addressRegion": "NY",
+        	"postalCode": "11105",
+        	"streetAddress": "31-01 Ditmars Boulevard"    
+     		},
+   		"area": {
+   			"@type": "",
+        	"addressLocality": "",
+        	"addressRegion": "",
+        	"postalCode": "",
+        	"streetAddress": ""    
+     		},
+   		"geo": {
+        	"@type": "GeoCoordinates",
+        	"latitude": "40.776306",
+        	"longitude": "-73.910118"
+  			}
+        }
+  		],
+	"refOrganization": [
+	{
+  		"@type": "Organization",
+  		"@context": "http://schema.org",
+  		"address": {
+    		"@type": "PostalAddress",
+    		"addressLocality": "",
+    		"addressRegion": "",
+    		"postalCode": "",
+    		"streetAddress": ""
+  		},
+  		"email": "",
+  		"faxNumber": "",
+  		"parent": {"@id":"http://www.w3.org/ns/org#subOrganizationOf"},
+  		"name": "The Sandwich Bar",
+  		"legalName": "Valavanis Bros. LLC",
+  		"classification": "Business",
+  		"identifier":"5001",
+  		"telephone": "",
+  		"url": "",
+  		"alternateName": ""}
+  		],
+	"refPerson": [
+		{
+  		"@context": "http://schema.org",
+  		"@type": "Person",
+  		"jobTitle": "",
+  		"name": "",
+  		"url": ""
+		}
+  		],
+	"refMeeting": [
+	  	{ 
+  		"@type": "Event",
+  		"@context": "http://schema.org",
+  		"name": "Public Hearing",
+  		"startDate": "2014-10-21T19:00:00-05:00",
+  		"endDate": "2014-10-21T21:00:00-05:00",
+  		"location": {
+      		"@type": "Place",
+      		"name": "Astoria World Manor",
+     		"address": {
+       			"@type": "PostalAddress",
+        		"addressLocality": "New York City",
+        		"addressRegion": "NY",
+       			"postalCode": "140358",
+       			"streetAddress": "25-22 Astoria Boulevard"    
+      			},
+      		"geo": {
+        		"@type": "GeoCoordinates",
+       			"latitude": "40.771129, ",
+        		"longitude": "-73.922356"
+      			}
+    		}
+  		}
+  		]
+	},
+"noticeType": {
+      "@type": "http://publicnotice.io/PublicHearing",
+      "eventId": "466456545"   
+      },
+"dateCreated": "2014-10-15T15:23:17-05:00",
+"dateModified": "2014-10-16T17:25:10-05:00"
+ }
