@@ -5,7 +5,7 @@
 "noticeTitle": "QUEENS COMMUNITY BOARD 1 PUBLIC HEARING NOTIFICATION.",
 "noticeDescription": "PUBLIC NOTICE IS HEREBY GIVEN** that the following matters have been scheduled for public hearing by Community Board: _BOROUGH OF QUEENS, COMMUNITY BOARD NO. 01 - Tuesday, October 21, 2014 at 7:00 P.M., Astoria World\nManor, 25-22 Astoria Boulevard, Queens, NY, 140358. IN THE MATTER OF an application from the Valavanis Bros. LLC, doing business as, The Sandwich Bar for review, pursuant to Section 366-a(c) of the New York City Charter of the grant of a new application of a revocable consent to construct and operate an enclosed sidewalk cafe with 13 tables and 26 seats at 31-01 Ditmars Boulevard on the n/e corner of 33rd Street and Ditmars Boulevard.",
 "section": {
-	"type": "http://publicnotice.io/Section",
+	"@type": "http://publicnotice.io/Section",
 	"sectionId": "1",
 	"sectionName": "Public Hearings and Meetings"
 	},
@@ -90,7 +90,7 @@
         	"streetAddress": "31-01 Ditmars Boulevard"    
      		},
    		"area": {
-   			"@type": "",
+   			"@type": "http://publicnotice.io/Area",
         	"addressLocality": "",
         	"addressRegion": "",
         	"postalCode": "",
@@ -158,8 +158,22 @@
       			}
     		}
   		}
-  		]
-	},
+  		],
+	"attachment":[
+      {
+      "@type": "http://publicnotice.io/Document",
+       "id": "",
+       "documentType":"",
+       "title":"",
+       "description":"",
+       "url":"",
+       "datePublished":"",
+       "dateModified":"",
+       "format":"",
+       "language":""
+       }
+      ]
+  },
 "noticeType": {
       "@type": "http://publicnotice.io/PublicHearing",
       "eventId": "466456545"   
