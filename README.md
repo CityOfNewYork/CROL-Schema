@@ -28,20 +28,20 @@ Create a  notice data standard that is optimized for public consumption.
 * ‘designed for public consumption”: it is optimized for public access and usablity
 
 
+
 #Proposed Structure
 
-Overall
 
-##JSON-LD
+####JSON-LD
 Each notice is stored as a JSON-LD document. Fully JSON based and compatible, JSON-LD is a lightweight Linked Data format. It is easy for humans to read and write, and provides a way to help JSON data interoperate at Web-scale. It is adopted by Google, Yahoo, Yandex, and Microsoft, and will provide the data with an off-the shelf integration to existing web apps as well as mapping by the major search engines of the city record data. Hence, The key project goals of “structuring” and “standardizing” will be achieved by adapting JSON-LD and established object structures from sources like schema.org and thepopoloproject.com.
 
 
-##JSON Schema
+####JSON Schema
 
 We use JSON Schema to describe the data format in a clear, human- and machine-readable documentation. It provides complete structural validation, useful for automated testing as well as validating client-submitted data
 
 
-##Schema Structure
+###Schema Structure
 The current proposed schema (in JSON-LD ) is built up by
 (a) notice skeleton (fields that are shared by all notice types), 
 (b) attributes (recursive and standardized objects such places, events, documents, organizations), and
@@ -51,7 +51,7 @@ Skeleton
 
 
 
-###Skeleton
+####Skeleton
 
 Section              Link                          | Status                   |   Impl. Phase 
 --------------|------------------------------------|--------------------------|--------------------
@@ -60,7 +60,7 @@ Skeleton      | [Sample](http://bit.ly/1ESeoeI)    |       Draft              | 
 
 
 
-###Attributes
+####Attributes
 
 Attributes              Link                       | Status                   |   Impl. Phase 
 --------------|------------------------------------|--------------------------|--------------------
@@ -77,18 +77,18 @@ NB. There are also a set of "system specific" objects such as (section, sub sect
 
 
 
-###Configurations
+####Configurations
 
 
-Configurations              Link                               | Status                           |   Impl. Phase 
---------------------------|------------------------------------|-----------------------------------|--------------------
-Public Hearing            | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   1
-Procurement               | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   1
-Property Displostion      | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   2
-Court notices             | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   2
-Rule Details              | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   2
-Personell Announcements   | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   2
-Other identified types    | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized              |   2
+Configurations              Link                               | Status                              |   Impl. Phase 
+--------------------------|------------------------------------|-------------------------------------|--------------------
+Public Hearing            | [Sample](http://bit.ly/1ESeoeI)    |          Draft                      |   1
+Procurement               |  Not yet available                 |          Not finalized              |   1
+Property Displostion      |  Not yet available                 |          Not finalized              |   2
+Court notices             |  Not yet available                 |          Not finalized              |   2
+Rule Details              |  Not yet available                 |          Not finalized              |   2
+Personell Announcements   |  Not yet available                 |          Not finalized              |   2
+Other identified types    |  Not yet available                 |          Not finalized              |   2
 
 
 #To Do's
