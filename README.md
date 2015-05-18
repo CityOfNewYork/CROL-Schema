@@ -53,7 +53,7 @@ Skeleton
 
 ####Skeleton
 
-Section              Link                          | Status                   |   Impl. Phase 
+Section       |       Link                         | Status                   |   Impl. Phase 
 --------------|------------------------------------|--------------------------|--------------------
 Skeleton      | [Sample](http://bit.ly/1ESeoeI)    |       Draft              |   1
 
@@ -62,7 +62,7 @@ Skeleton      | [Sample](http://bit.ly/1ESeoeI)    |       Draft              | 
 
 ####Attributes
 
-Attributes              Link                       | Status                   |   Impl. Phase 
+Attributes    |         Link                       | Status                   |   Impl. Phase 
 --------------|------------------------------------|--------------------------|--------------------
 Place         | [Sample](http://bit.ly/1ESeoeI)    |        Draft             |   1
 Event         | [Sample](http://bit.ly/1ESeoeI)    |        Draft             |   1
@@ -80,7 +80,7 @@ NB. There are also a set of "system specific" objects such as (section, sub sect
 ####Configurations
 
 
-Configurations              Link                               | Status                              |   Impl. Phase 
+Configurations            |   Link                             | Status                              |   Impl. Phase 
 --------------------------|------------------------------------|-------------------------------------|--------------------
 Public Hearing            | [Sample](http://bit.ly/1ESeoeI)    |          Draft                      |   1
 Procurement               |  Not yet available                 |          Not finalized              |   1
