@@ -1,15 +1,24 @@
-# City Record Online Workgroup (CROW) - Schema
+# City Record Online Workgroup (CROW) - JSON Schema
 
-This is the main repository containing efforts pertaining to the schema development of CROW. For parsing libraries, see https://github.com/CityOfNewYork/CROL-Parsing. 
-
-Disclaimer. In case of conflicting document versions, please refer to documents mentioned in GitHub as the latest version.
+This section relates to creating the JSON Schema representation to be used to validate the JSON-LD public notice arrays.
 
 
-## About
-This repo will consolodate and house the Schema related aspect of the City Record Online Project
+
+## Status
+Current files represents are sample cases cannot be used to validate the JSON-LD public notice sample arrays. 
 
 
-* Documentation
+Section                                     | JSON-LD                   | JSON Schema
+--------------------------------------------|---------------------------|-------------------
+Skeleton                                    | Draft                     |        Not finalized
+Attributes                                  | Draft                     |        Not finalized
+Configurations                              | Draft                     |        Not finalized
+
+
+To Do: Create JSON Schema for verified JSON-LD arrays.
+
+
+* Documentation - How to generate JSON Schema files
 
 * Schema publishing [website](https://crow-schema.herokuapp.com/#schema.json)
   * Create a build environment to allow our schema authors to
