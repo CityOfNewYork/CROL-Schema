@@ -43,9 +43,9 @@ We use JSON Schema to describe the data format in a clear, human- and machine-re
 
 ###Schema Structure
 The current proposed schema (in JSON-LD ) is built up by
-(a) notice skeleton (fields that are shared by all notice types), 
-(b) attributes (recursive and standardized objects such places, events, documents, organizations), and
-(c) sub-configurations (the set of notice-type specific fields, belonging, for instance, to all solicitations, or court notices). 
+* (a) notice skeleton (fields that are shared by all notice types), 
+* (b) attributes (recursive and standardized objects such places, events, documents, organizations), and
+* (c) sub-configurations (the set of notice-type specific fields, belonging, for instance, to all solicitations, or court notices). 
 Skeleton
 
 
