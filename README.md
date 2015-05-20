@@ -70,7 +70,7 @@ Document      | [Sample](http://bit.ly/1ESeoeI)    |        Draft             | 
 Organization  | [Sample](http://bit.ly/1ESeoeI)    |        Draft             |   1
 Person        | [Sample](http://bit.ly/1ESeoeI)    |        Draft             |   1
 Agenda Items  | [Sample](http://bit.ly/1ESeoeI)    |        Draft             |   2
-Links/Urls    | [Sample](http://bit.ly/1ESeoeI)    |        Draft             |   1
+Links/Urls    | [Sample](http://bit.ly/1ESeoeI)    |        Not finalized     |   1
 
 
 NB. There are also a set of "system specific" objects such as (section, sub section) that needs to be mapped out. See [Sample](http://bit.ly/1ESeoeI) 
@@ -84,7 +84,7 @@ Configurations            |   Link                             | Status         
 --------------------------|------------------------------------|-------------------------------------|--------------------
 Public Hearing            | [Sample](http://bit.ly/1ESeoeI)    |          Draft                      |   1
 Procurement               |  Not yet available                 |          Not finalized              |   1
-Property Displostion      |  Not yet available                 |          Not finalized              |   2
+Property Disposition      |  Not yet available                 |          Not finalized              |   2
 Court notices             |  Not yet available                 |          Not finalized              |   2
 Rule Details              |  Not yet available                 |          Not finalized              |   2
 Personell Announcements   |  Not yet available                 |          Not finalized              |   2
